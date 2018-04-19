@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AgileTools.iml" filepath="$PROJECT_DIR$/AgileTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/AgileTools.iml" filepath="$PROJECT_DIR$/.idea/AgileTools.iml" />
+      <module fileurl="file://D:\StudioProjects\AgileTools\AgileTools.iml" filepath="D:\StudioProjects\AgileTools\AgileTools.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\StudioProjects\AgileTools\app\app.iml" filepath="D:\StudioProjects\AgileTools\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/util_lib/util_lib.iml" filepath="$PROJECT_DIR$/util_lib/util_lib.iml" />
+      <module fileurl="file://D:\StudioProjects\AgileTools\util_lib\util_lib.iml" filepath="D:\StudioProjects\AgileTools\util_lib\util_lib.iml" />
     </modules>
   </component>
 </project>

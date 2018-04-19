@@ -1,10 +1,10 @@
 package com.github.wrongyuan.agile_tools;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends AppCompatActivity {
     protected String TAG = getClass().getSimpleName();
 
     @Override
@@ -12,7 +12,18 @@ public class BaseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
     }
 
-    protected void naviTo(Class<?> cls) {
+    /**
+     * must be called after {@link android.app.Activity#setContentView(int)}
+     */
+    protected abstract void initView();
+
+    protected void navigateTo(Class<?> cls) {
         startActivity(new Intent(this, cls));
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
     }
 }

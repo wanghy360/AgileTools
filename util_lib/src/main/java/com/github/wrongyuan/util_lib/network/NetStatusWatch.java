@@ -8,12 +8,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author wrongyuan on 2017/3/6
+ * @author Wanghy on 2017/3/6
  */
 public class NetStatusWatch {
     private NetworkStatus currNetStatus = NetworkStatus.NETWORK_NONE;
     private List<OnNetStatusChangedListener> arrNetStatusListenr;
-    private NetChangeBroadCastReciver netChangeReciver;
+    private NetChangeBroadCastReceiver netChangeReciver;
     private static NetStatusWatch instance;
 
     public NetStatusWatch() {
@@ -76,8 +76,8 @@ public class NetStatusWatch {
     public void init(Application application) {
         currNetStatus = NetUtil.getNetWorkState(application);
         if (netChangeReciver == null) {
-            netChangeReciver = new NetChangeBroadCastReciver();
-            netChangeReciver.setListener(new NetChangeBroadCastReciver.OnNetChangedListener() {
+            netChangeReciver = new NetChangeBroadCastReceiver();
+            netChangeReciver.setListener(new NetChangeBroadCastReceiver.OnNetChangedListener() {
                 @Override
                 public void onNetChanged(NetworkStatus currNetStatus) {
                     NetStatusWatch.this.currNetStatus = currNetStatus;

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AgileTools</string>
     <string name="net_change">网络变化监听</string>
+    <string name="clear_content">清空</string>
 </resources>
