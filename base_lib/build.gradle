@@ -1,15 +1,16 @@
-apply plugin: 'com.android.application'
-
+apply plugin: 'com.android.library'
 android {
     compileSdkVersion 25
     buildToolsVersion hyBuildToolsVersion
+
     defaultConfig {
-        applicationId "com.github.wrongyuan.agile_tools"
         minSdkVersion 15
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
+
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
@@ -24,10 +25,7 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation "com.android.support:appcompat-v7:${supportLibVersion}"
-    implementation "com.android.support:recyclerview-v7:${supportLibVersion}"
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    provided "com.android.support:appcompat-v7:${supportLibVersion}"
+    provided "com.android.support:recyclerview-v7:${supportLibVersion}"
     testCompile 'junit:junit:4.12'
-    compile project(':base_lib')
 }

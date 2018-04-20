@@ -26,5 +26,6 @@ task clean(type: Delete) {
 
 ext {
     supportLibVersion = "25.4.0"
+    supportMultidexVersion = "1.0.3"
     hyBuildToolsVersion = '27.0.3'
 }

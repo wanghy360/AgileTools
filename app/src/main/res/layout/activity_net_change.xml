@@ -4,7 +4,7 @@
     android:id="@+id/activity_net_change"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.github.wrongyuan.agile_tools.NetChangeActivity">
+    tools:context="com.github.wanghy360.agile_tools.NetChangeActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list_net_status"
