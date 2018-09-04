@@ -8,9 +8,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/AgileTool" />
+            <option value="$PROJECT_DIR$/OpenLibrary" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/base_lib" />
-            <option value="$PROJECT_DIR$/open_lib" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

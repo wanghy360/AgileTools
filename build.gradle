@@ -2,11 +2,12 @@
 
 buildscript {
     repositories {
+        mavenCentral()
         jcenter()
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.1.4'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -15,8 +16,10 @@ buildscript {
 
 allprojects {
     repositories {
+        mavenCentral()
         jcenter()
         google()
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
     }
 }
 
@@ -25,7 +28,13 @@ task clean(type: Delete) {
 }
 
 ext {
-    supportLibVersion = "25.4.0"
+    hyBuildToolsVersion = '28.0.2'
+    hycompileSdkVersion = 27
+    hyminSdkVersion = 15
+    hytargetSdkVersion = 25
+    supportLibVersion = "27.1.1"
     supportMultidexVersion = "1.0.3"
-    hyBuildToolsVersion = '27.0.3'
+
+    hyRunnerVersion = "1.0.1"
+    hyEspressoVersion = "3.0.1"
 }

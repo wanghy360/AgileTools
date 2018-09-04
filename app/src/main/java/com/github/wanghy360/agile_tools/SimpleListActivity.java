@@ -1,6 +1,5 @@
 package com.github.wanghy360.agile_tools;
 
-import android.os.Bundle;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -13,10 +12,6 @@ import com.github.wanghy360.base.recyclerview.SimpleRecyclerViewAdapter;
 
 public abstract class SimpleListActivity extends BaseActivity {
     protected SimpleRecyclerViewAdapter simpleAdapter;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
 
     public void initSimpleRecyclerView(RecyclerView recyclerView) {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));

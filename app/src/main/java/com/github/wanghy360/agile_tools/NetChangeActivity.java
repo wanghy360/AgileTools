@@ -21,12 +21,12 @@ public class NetChangeActivity extends SimpleListActivity implements NetStatusWa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_net_change);
+        unbinder = ButterKnife.bind(this);
         initView();
     }
 
     @Override
     protected void initView() {
-        unbinder = ButterKnife.bind(this);
         initSimpleRecyclerView(recyclerView);
         NetStatusWatch.getInstance().regisiterListener(this);
         Log.d(TAG, "Net status Start : " + NetStatusWatch.getInstance().getCurrNetStatus().name());

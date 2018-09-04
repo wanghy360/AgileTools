@@ -1,1 +1,1 @@
-include ':app', ':base_lib', ':open_lib'
+include ':app', ':AgileTool', ':OpenLibrary'
