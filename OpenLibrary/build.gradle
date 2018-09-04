@@ -17,7 +17,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -44,7 +44,7 @@ dependencies {
     androidTestImplementation "com.android.support.test:runner:${hyRunnerVersion}"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:${hyEspressoVersion}"
 
-    api project(':AgileTool')
+    compileOnly project(':AgileTool')
 
     implementation 'com.squareup.okhttp3:okhttp:3.11.0'
 
