@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AgileTool/AgileTool.iml" filepath="$PROJECT_DIR$/AgileTool/AgileTool.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/AgileTools.iml" filepath="$PROJECT_DIR$/.idea/AgileTools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AgileTools.iml" filepath="$PROJECT_DIR$/AgileTools.iml" />
       <module fileurl="file://$PROJECT_DIR$/OpenLibrary/OpenLibrary.iml" filepath="$PROJECT_DIR$/OpenLibrary/OpenLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

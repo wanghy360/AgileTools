@@ -14,16 +14,16 @@ android {
 
     signingConfigs {
         debug {
-            keyAlias 'key0'
-            keyPassword 'android'
-            storeFile file('../agile.jks')
-            storePassword 'android'
+//            keyAlias 'key0'
+//            keyPassword 'android'
+//            storeFile file('../agile.jks')
+//            storePassword 'android'
         }
         release {
-            keyAlias 'key0'
-            keyPassword 'android'
-            storeFile file('../agile.jks')
-            storePassword 'android'
+//            keyAlias 'key0'
+//            keyPassword 'android'
+//            storeFile file('../agile.jks')
+//            storePassword 'android'
         }
     }
 
